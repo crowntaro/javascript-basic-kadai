@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タブメニューとアコーディオン</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="tab">
+        <ul>
+            <li class="--active" data-tab="tab1">Menu1</li>
+            <li data-tab="tab2">Menu2</li>
+            <li data-tab="tab3">Menu3</li>
+        </ul>
+        <div class="tab_contents --active"  data-contents="contents1">
+            Mwnu1の内容
+
+        </div>
+        <div class="tab_contents">
+            Mwnu２の内容
+
+        </div>
+        <div class="tab_contents">
+            Mwnu３の内容
+
+        </div>
+    </div>
+
+    <div class="accordion">
+        <dl>
+            <dt class="--active" data-trigger="1"><span></span><h3>質問１</span></h3>
+            <dd data-accordion="1" class="--active">回答１</dd>
+
+            <dt data-trigger="2"><span></span>質問２</dt>
+            <dd data-accordion="2">回答２</dd>
+
+            <dt data-trigger="3"><span></span>質問３</dt>
+            <dd data-accordion="3">回答３</dd>
+
+        </dl>
+
+
+    </div>
+    
+    <script src="js/tab.js"></script>
+</body>
+</html>
